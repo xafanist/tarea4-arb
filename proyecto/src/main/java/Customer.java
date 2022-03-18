@@ -23,7 +23,7 @@ public class Customer {
             Rental each = (Rental) rentals.nextElement();
 
             // determine amounts for each line
-            switch (each.getMovie().getPriceCode()) {
+            switch (each.getMovie().getPriceCode()) 
                 case Movie.REGULAR:
                     thisAmount += 2;
                     if (each.getDaysRented() > 2)
